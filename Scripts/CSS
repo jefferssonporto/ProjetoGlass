@@ -25,6 +25,9 @@ a {
 a:hover{
     text-decoration: underline;
 }
+
+/* Formatação Cabeçalho */ 
+
 header#cabecalho img#icone{
     position: absolute;
     left: 780px;
@@ -54,6 +57,7 @@ header#cabecalho h2{
     padding: 0px;
     margin-top: 0px;
 }
+
 /* Formatação de imagens com legendas */
 
 figure.foto-legenda{
@@ -84,9 +88,12 @@ figure.foto-legenda:hover figcaption{
 
 
 /* Formatação do Menu */
+
 nav#menu {
-    display: inline-table;
+    display: block;
 }
+
+/* Tudo que for nav#menu e for ul*/
 nav#menu ul{
     list-style: none;
     text-transform: uppercase;
@@ -95,27 +102,38 @@ nav#menu ul{
     left: 300px;
 }
 
-nav#menu li{
+/* Tudo que for nav#menu e for li lista */
+nav#menu li{ 
     display: inline-block;
     background-color: #dddddd;
     padding: 10px;
     margin: 2px;
-    transition: background-color 1s;
+    transition: background-color 1s; /*tempo que demora para realizar a transição para mudança de cor definido no li:hover*/
 }
-nav#menu li:hover {
-    background-color: #606060;
+
+
+nav#menu li:hover { /*ao passar o mouse causa uma interação*/
+    background-color: #606060; /* no caso a interação é a mudança de cor do fundo com o background-color*/
 }
-nav#menu a {
-    color:#000000;
-    text-decoration: none;
+
+/*configuração dos Links Ancora*/
+
+nav#menu a { 
+    color:#000000; /* cor preta */
+    text-decoration: none; /*tirar o sublinhado*/ 
+    
 }
-nav#menu a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
+
+nav#menu a:hover { /*configuração da Tag hover */
+    color: #ffffff; /* quando passar o mouse por cima muda a cor, no caso branco*/ 
+    text-decoration: underline; /* quando passar o mouse por cima fica sublinhado */ 
+}  
+
 nav#menu h1 {
     display: none;
 }
+
+
 section#corpo {
     display: block;
     width: 600px;
