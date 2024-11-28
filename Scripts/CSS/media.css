@@ -18,7 +18,17 @@ audio#musica{
 video#filme {
     display: block;
     position: relative;
-    left: 90px;
-    top: 85px;
-    width: 440px;
+    left: 20px;
+    top: -5px; 
+    width: 480px;
+    
 }
+
+video#video {
+    display: block;
+    position: relative;
+    /*left: 90px;
+    top: 85px ; */
+    width: 350px;
+}
+
